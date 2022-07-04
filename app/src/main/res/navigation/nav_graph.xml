@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/imageListedFragment">
+
+    <fragment
+        android:id="@+id/imageListedFragment"
+        android:name="com.enveramil.imagerecorder.view.ImageListedFragment"
+        android:label="ImageListedFragment" >
+        <action
+            android:id="@+id/action_imageListedFragment_to_imageDetailsFragment"
+            app:destination="@id/imageDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageDetailsFragment"
+        android:name="com.enveramil.imagerecorder.view.ImageDetailsFragment"
+        android:label="ImageDetailsFragment" >
+        <action
+            android:id="@+id/action_imageDetailsFragment_to_imageAPIFragment"
+            app:destination="@id/imageAPIFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageAPIFragment"
+        android:name="com.enveramil.imagerecorder.view.ImageAPIFragment"
+        android:label="ImageAPIFragment" />
+</navigation>
