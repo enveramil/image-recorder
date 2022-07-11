@@ -52,6 +52,7 @@ class ImageListedFragment @Inject constructor(
 
         binding.floatingActionButton.setOnClickListener {
             findNavController().navigate(ImageListedFragmentDirections.actionImageListedFragmentToImageDetailsFragment())
+            viewModel.setSelectedImage("")
         }
     }
 

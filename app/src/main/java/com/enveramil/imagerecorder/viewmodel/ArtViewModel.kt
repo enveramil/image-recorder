@@ -9,6 +9,7 @@ import com.enveramil.imagerecorder.model.ImageResponse
 import com.enveramil.imagerecorder.repo.ArtRepositoryInterface
 import com.enveramil.imagerecorder.roomdb.Model
 import com.enveramil.imagerecorder.util.Resource
+import com.enveramil.imagerecorder.view.ImageAPIFragment
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -32,7 +33,6 @@ class ArtViewModel
     private val selectedImage = MutableLiveData<String>()
     val selectedImageUrl : LiveData<String>
             get() = selectedImage
-
 
     // Image Details Fragment
     private var insertArtMsg = MutableLiveData<Resource<Model>>()
